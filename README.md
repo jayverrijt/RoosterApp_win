@@ -1,2 +1,2 @@
 # RoosterApp_win
-roosterapp Windows port
+roosterapp Windows port (dotnet C#)
