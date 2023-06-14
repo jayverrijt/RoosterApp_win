@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Win_RoosterApp"
         mc:Ignorable="d"
-        Title="Inloggen" Height="484" Width="281"
+        Title="Rooster App - Inloggen" Height="484" Width="281"
         ResizeMode="NoResize" WindowStyle="None">
     <Grid Background="Black">
         <Grid.ColumnDefinitions>
@@ -26,6 +26,5 @@
         <PasswordBox x:Name="passBox" Width="150" Background="LightGray" Foreground="Black" Height="20" Grid.Column="1" Grid.Row="2" VerticalAlignment="Bottom" HorizontalAlignment="Left" Margin="13,0,0,66" Grid.RowSpan="2"/>
         <Button x:Name="login" Click="login_Button" Grid.Row="3" Grid.Column="1" Height="40" Width="150" Background="DarkGray" Foreground="White" HorizontalAlignment="Left" Content="Inloggen" Margin="11,13,0,13"/>
         <Image Source="custom_sources/afb/banner.jpg" Grid.Column="0" Grid.Row="0" Grid.RowSpan="7" Stretch="Fill"></Image>
-
     </Grid>
 </Window>

@@ -4,17 +4,17 @@
 winexe
 C#
 .cs
-C:\Users\Jay\source\repos\Win_RoosterApp\Win_RoosterApp\obj\Debug\
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\
 Win_RoosterApp
 none
 false
 DEBUG;TRACE
-C:\Users\Jay\source\repos\Win_RoosterApp\Win_RoosterApp\App.xaml
-1219584333
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\App.xaml
+2-373711641
 
-6-502434485
-29255762732
-MainWindow.xaml;
+7-893247235
+29-106247018
+Dashboard.xaml;MainWindow.xaml;
 
-False
+True
 

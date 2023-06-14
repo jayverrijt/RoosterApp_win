@@ -84,3 +84,5 @@ C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Win_RoosterApp.csproj.CoreC
 C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Win_RoosterApp.csproj.CopyComplete
 C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Win_RoosterApp.exe
 C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Win_RoosterApp.pdb
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Dashboard.g.cs
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Dashboard.baml

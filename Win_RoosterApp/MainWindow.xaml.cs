@@ -1,8 +1,10 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Data.SqlClient;
 using System.Diagnostics;
 using System.Linq;
 using System.Security.AccessControl;
+using System.Security.Cryptography.X509Certificates;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows;
@@ -25,6 +27,7 @@ namespace Win_RoosterApp
         private connection conn = new connection();
         private MySqlCommand command;
         private MySqlCommand commandb;
+
 
         private void login_Button(object sender, RoutedEventArgs e)
         {
@@ -58,13 +61,44 @@ namespace Win_RoosterApp
                                     object b = commandb.ExecuteScalar();
 
                                     if(b == null) {
-                                        MessageBox.Show("Welkom " + username); // OUT SESSION
+                                        try
+                                        {
+                                            string quUpdateSession = "UPDATE users SET insession='1' WHERE username =" + username + "";
+                                            MySqlCommand cmdc;
+                                            cmdc = new MySqlCommand(quUpdateSession, conn.get_connection());
+                                            MySqlDataReader MyReaderC;
+                                            MyReaderC = cmdc.ExecuteReader();
+                                            Dashboard dashboard = new Dashboard(username);
+                                            dashboard.Show();
+                                            this.Close();
+                                        } catch (Exception exx)
+                                        {
+                                            MessageBox.Show(exx.Message);
+                                        }
+                                       
                                     }
                                     else {
-                                        MessageBox.Show("User " + username + " in session"); // IN SESSION
-
+                                        if (MessageBox.Show("Gebruiker " + username + " is al ingelogd, wil je deze uitloggen?", "Gebruiker " + username + " is al ingelogd", MessageBoxButton.YesNo) == MessageBoxResult.Yes)
+                                        {
+                                            try
+                                            {
+                                                string quUpdateSession = "UPDATE users SET insession='0' WHERE username =" + username + "";
+                                                MySqlCommand cmdc;
+                                                cmdc = new MySqlCommand(quUpdateSession, conn.get_connection());
+                                                MySqlDataReader MyReaderC;
+                                                MyReaderC = cmdc.ExecuteReader();
+                                                
+                                            } catch (Exception ex)
+                                            {
+                                                MessageBox.Show(ex.Message);
+                                            }
+                                        } else
+                                        {
+                                            conn.close_conn();
+                                            this.Close();
+                                        }
                                     }
-                                } catch (MySqlException xy)
+                               } catch (MySqlException xy)
                                 {
                                     MessageBox.Show("Unexpected Error: " + xy);
                                 }
@@ -73,14 +107,13 @@ namespace Win_RoosterApp
                         }
                     } catch (MySqlException x) {
                         MessageBox.Show("Unexpected Error:" + x);
-;                    }
+;                   }
                 }
             }
             userBox.Text = "";
             passBox.Password = "";
             conn.close_conn();
         }
-
 
         public MainWindow ()
         {
