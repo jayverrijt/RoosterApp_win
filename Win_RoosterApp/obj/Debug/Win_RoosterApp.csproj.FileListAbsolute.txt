@@ -86,3 +86,9 @@ C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Win_RoosterApp.exe
 C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Win_RoosterApp.pdb
 C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Dashboard.g.cs
 C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\Dashboard.baml
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\UserControl.g.cs
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\UserControl.baml
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\rmUser.g.cs
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\rmUser.baml
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\addUser.g.cs
+C:\Users\Jay\roosterapp_win\Win_RoosterApp\obj\Debug\addUser.baml

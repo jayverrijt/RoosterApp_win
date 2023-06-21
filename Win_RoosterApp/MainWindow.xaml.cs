@@ -163,7 +163,7 @@ namespace Win_RoosterApp
                     return false;
                 }
             }
-            public void close_conn()
+            public void close_conn()//CloseConnection()
             {
                 this.conn.Close();
             }

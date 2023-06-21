@@ -36,6 +36,10 @@ namespace Win_RoosterApp
             main();
             _username = username;
         }
+        private void usersBtn(object sender, RoutedEventArgs e) {
+            UserControl userctrlwindow = new UserControl();
+            userctrlwindow.Show();
+        }
 
         private void logOffbtn(object sender, RoutedEventArgs e)
         {

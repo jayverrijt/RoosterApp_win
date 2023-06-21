@@ -25,5 +25,6 @@
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
         <Button Grid.Row="9" Grid.Column="0" Content="Uitloggen" Click="logOffbtn"></Button>
+        <Button Grid.Row="8" Grid.Column="0" Content="Gebruikers" Click="usersBtn"></Button>
     </Grid>
 </Window>
