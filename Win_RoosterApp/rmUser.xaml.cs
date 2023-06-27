@@ -29,9 +29,9 @@ namespace Win_RoosterApp
         {
             try
             {
-                string ConnectionString = @"server=localhost;userid=root;password=;database=ratest0";
+                projectSecrets pos = new projectSecrets();
                 MySqlConnection conn = null;
-                conn = new MySqlConnection(ConnectionString);
+                conn = new MySqlConnection(pos.connectionString);
                 MySqlDataReader dra = null;
                 string query = "DELETE from users WHERE username =" + ioRemoveUser.Text + "";
                 MySqlCommand cmd = new MySqlCommand(query, conn);

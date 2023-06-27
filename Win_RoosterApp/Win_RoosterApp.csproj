@@ -98,6 +98,7 @@
     <Compile Include="addUser.xaml.cs">
       <DependentUpon>addUser.xaml</DependentUpon>
     </Compile>
+    <Compile Include="projectSecrets.cs" />
     <Compile Include="rmUser.xaml.cs">
       <DependentUpon>rmUser.xaml</DependentUpon>
     </Compile>

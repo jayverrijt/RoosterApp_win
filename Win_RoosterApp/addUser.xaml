@@ -5,7 +5,7 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:Win_RoosterApp"
         mc:Ignorable="d"
-        Title="Toevoegen Account" Height="400" Width="205" WindowStyle="ToolWindow">
+        Title="Toevoegen Account" Height="400" Width="205" WindowStyle="ToolWindow" Topmost="True">
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="1*"></RowDefinition>

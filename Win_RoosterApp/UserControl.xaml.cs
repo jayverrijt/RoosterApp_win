@@ -48,14 +48,14 @@ namespace Win_RoosterApp
 
         public void ioAddUsers(object sender, RoutedEventArgs e)
         {
-            string connectionString = @"server=localhost;userid=root;password=;database=ratest0";
+            projectSecrets pos = new projectSecrets();
             MySqlConnection conn = null;
             MySqlDataReader rdr = null;
 
             try 
             {
                 List<Button> buttonList = new List<Button>();
-                conn = new MySqlConnection(connectionString);
+                conn = new MySqlConnection(pos.connectionString);
                 conn.Open();
                 string query = "SELECT * FROM users";
                 MySqlCommand cmd = new MySqlCommand(query, conn);

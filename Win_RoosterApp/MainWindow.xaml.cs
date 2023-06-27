@@ -134,13 +134,8 @@ namespace Win_RoosterApp
 
             private void Initilize()
             {
-                server = "localhost";
-                db = "ratest0";
-                user = "root";
-                pass = "";
-                string connectionString;
-                connectionString = "Data Source=" + server + ";Database=" + db + ";User Id=" + user + ";Password=" + pass + ";SSL Mode=0";
-                conn = new MySqlConnection(connectionString);
+                projectSecrets pos = new projectSecrets();
+                conn = new MySqlConnection(pos.connectionString);
             }
             public bool OpenConnection()
             {
@@ -151,6 +146,7 @@ namespace Win_RoosterApp
                 }
                 catch (MySqlException e)
                 {
+                    MessageBox.Show(e.Message);
                     switch (e.Number)
                     {
                         case 0:

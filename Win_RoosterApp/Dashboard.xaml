@@ -24,7 +24,12 @@
             <RowDefinition Height="*"></RowDefinition>
             <RowDefinition Height="*"></RowDefinition>
         </Grid.RowDefinitions>
-        <Button Grid.Row="9" Grid.Column="0" Content="Uitloggen" Click="logOffbtn"></Button>
-        <Button Grid.Row="8" Grid.Column="0" Content="Gebruikers" Click="usersBtn"></Button>
+        <Button Grid.Row="9" Grid.Column="0" Content="Uitloggen" Click="logOffbtn" Style="{StaticResource btnStyleDash}"></Button>
+        <Button Grid.Row="8" Grid.Column="0" Content="Gebruikers" Click="usersBtn" Style="{StaticResource btnStyleDash}"></Button>
+        <Button Style="{StaticResource btnStyleDash}" Content="Selecteren" Grid.Row="0" Grid.Column="0" Click="btnSelectedUser"></Button>
+        <Label Grid.Row="0" Grid.Column="1" Content="Selecteer een gebruiker" Grid.ColumnSpan="2" Grid.RowSpan="10" FontSize="48px" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ioLabelSelUser"></Label>
+        <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="10" Visibility="Hidden" x:Name="ioUserListBorder">
+            <Label>Test</Label>
+        </Border>
     </Grid>
 </Window>
