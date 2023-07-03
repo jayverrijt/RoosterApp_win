@@ -37,6 +37,7 @@ namespace Win_RoosterApp
             InitializeComponent();
             main();
             _username = username;
+            DataContext = new DashboardViewModel();
         }
 
         private void usersBtn(object sender, RoutedEventArgs e) {

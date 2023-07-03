@@ -95,25 +95,28 @@
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </ApplicationDefinition>
-    <Compile Include="addUser.xaml.cs">
-      <DependentUpon>addUser.xaml</DependentUpon>
+    <Compile Include="Views\AddUserView.xaml.cs">
+      <DependentUpon>AddUserView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="projectSecrets.cs" />
-    <Compile Include="rmUser.xaml.cs">
-      <DependentUpon>rmUser.xaml</DependentUpon>
+    <Compile Include="ViewModels\DashboardViewModel.cs" />
+    <Compile Include="Models\NotifyPropertyBase.cs" />
+    <Compile Include="Models\projectSecrets.cs" />
+    <Compile Include="Views\RemoveUserView.xaml.cs">
+      <DependentUpon>RemoveUserView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="UserControl.xaml.cs">
-      <DependentUpon>UserControl.xaml</DependentUpon>
+    <Compile Include="Models\User.cs" />
+    <Compile Include="Views\UserDashboardView.xaml.cs">
+      <DependentUpon>UserDashboardView.xaml</DependentUpon>
     </Compile>
-    <Page Include="addUser.xaml">
+    <Page Include="Views\AddUserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="Dashboard.xaml">
+    <Page Include="Views\DashboardView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="MainWindow.xaml">
+    <Page Include="Views\LoginView.xaml">
       <Generator>MSBuild:Compile</Generator>
       <SubType>Designer</SubType>
     </Page>
@@ -121,18 +124,18 @@
       <DependentUpon>App.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Compile Include="Dashboard.xaml.cs">
-      <DependentUpon>Dashboard.xaml</DependentUpon>
+    <Compile Include="Views\DashboardView.xaml.cs">
+      <DependentUpon>DashboardView.xaml</DependentUpon>
     </Compile>
-    <Compile Include="MainWindow.xaml.cs">
-      <DependentUpon>MainWindow.xaml</DependentUpon>
+    <Compile Include="Views\LoginView.xaml.cs">
+      <DependentUpon>LoginView.xaml</DependentUpon>
       <SubType>Code</SubType>
     </Compile>
-    <Page Include="rmUser.xaml">
+    <Page Include="Views\RemoveUserView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
-    <Page Include="UserControl.xaml">
+    <Page Include="Views\UserDashboardView.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>

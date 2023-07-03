@@ -29,7 +29,21 @@
         <Button Style="{StaticResource btnStyleDash}" Content="Selecteren" Grid.Row="0" Grid.Column="0" Click="btnSelectedUser"></Button>
         <Label Grid.Row="0" Grid.Column="1" Content="Selecteer een gebruiker" Grid.ColumnSpan="2" Grid.RowSpan="10" FontSize="48px" HorizontalAlignment="Center" VerticalAlignment="Center" x:Name="ioLabelSelUser"></Label>
         <Border Grid.Row="0" Grid.Column="1" Grid.RowSpan="10" Visibility="Hidden" x:Name="ioUserListBorder">
-            <Label>Test</Label>
+            <ItemsControl ItemsSource="{Binding Users}">
+                <ItemsControl.ItemsPanel>
+                    <ItemsPanelTemplate>
+                        <StackPanel Margin="2.5"></StackPanel>
+                    </ItemsPanelTemplate>
+                </ItemsControl.ItemsPanel>
+                <ItemsControl.ItemTemplate>
+                    <DataTemplate>
+                        <StackPanel Orientation="Horizontal">
+                            <TextBlock Text="{Binding Username, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged}" Width="150px" FontSize="22px" HorizontalAlignment="Center" Foreground="Black" Height="50px"/>
+                            <Button Style="{StaticResource btnStyleDash}" Content="Selecteer"></Button>
+                        </StackPanel>
+                    </DataTemplate>
+                </ItemsControl.ItemTemplate>
+            </ItemsControl>
         </Border>
     </Grid>
 </Window>

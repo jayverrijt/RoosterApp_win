@@ -1,8 +1,8 @@
 ﻿
-FC:\Users\Jay\roosterapp\Win_RoosterApp\App.xaml;;
-FC:\Users\Jay\roosterapp\Win_RoosterApp\addUser.xaml;;
-FC:\Users\Jay\roosterapp\Win_RoosterApp\Dashboard.xaml;;
-FC:\Users\Jay\roosterapp\Win_RoosterApp\MainWindow.xaml;;
-FC:\Users\Jay\roosterapp\Win_RoosterApp\rmUser.xaml;;
-FC:\Users\Jay\roosterapp\Win_RoosterApp\UserControl.xaml;;
+FC:\Users\Jay\roosterapp_win\Win_RoosterApp\App.xaml;;
+FC:\Users\Jay\roosterapp_win\Win_RoosterApp\Views\AddUserView.xaml;;
+FC:\Users\Jay\roosterapp_win\Win_RoosterApp\Views\DashboardView.xaml;;
+FC:\Users\Jay\roosterapp_win\Win_RoosterApp\Views\LoginView.xaml;;
+FC:\Users\Jay\roosterapp_win\Win_RoosterApp\Views\RemoveUserView.xaml;;
+FC:\Users\Jay\roosterapp_win\Win_RoosterApp\Views\UserDashboardView.xaml;;
 
